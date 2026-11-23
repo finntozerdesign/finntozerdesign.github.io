@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Finn Tozer — Product Designer | finntozerdesign</title>
+  <meta name="description" content="Finn Tozer — product designer. Designing for the relationship a person forms with an object.">
+  <meta name="theme-color" content="#ffffff">
+  <!-- LINK PREVIEW (the card shown when the link is shared on LinkedIn, WhatsApp, email…).
+       CHANGE "finntozerdesign.github.io" below if your GitHub username is different. -->
+  <meta property="og:site_name" content="finntozerdesign">
+  <meta property="og:title" content="Finn Tozer — Product designer">
+  <meta property="og:description" content="Product design portfolio of Finn Tozer, final-year Product Design student at the University of Sussex.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://finntozerdesign.github.io/share.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="The finntozerdesign logo beside the words Finn Tozer, Product designer.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="inter-400.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="inter-display-600.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Content lives in content.js. main.js turns it into the page. -->
+  <script src="content.js" defer></script>
+  <script src="main.js" defer></script>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER (same on every page) ============ -->
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="finntozerdesign — home">
+        <svg class="logo" viewBox="0 0 30 20" aria-hidden="true" focusable="false">
+          <rect class="b1" x="0" y="0" width="4" height="10"/><rect class="b2" x="5" y="0" width="4" height="20"/><rect class="b3" x="10" y="0" width="20" height="4"/><rect class="b4" x="10" y="5" width="10" height="4"/>
+        </svg>
+        <span class="brand-name">finntozerdesign</span>
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html#work">Work</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#journal">Journal</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ INTRO ============ -->
+    <section class="intro wrap" id="top" aria-labelledby="intro-name">
+      <div class="intro-top">
+        <span class="mono muted">Product design portfolio</span>
+        <svg class="intro-mark" viewBox="0 0 30 20" aria-hidden="true" focusable="false">
+          <rect class="b1" x="0" y="0" width="4" height="10"/><rect class="b2" x="5" y="0" width="4" height="20"/><rect class="b3" x="10" y="0" width="20" height="4"/><rect class="b4" x="10" y="5" width="10" height="4"/>
+        </svg>
+      </div>
+      <div>
+        <h1 class="intro-name" id="intro-name"><!-- filled from content.js --></h1>
+        <p class="intro-role" id="intro-role"></p>
+      </div>
+      <div class="intro-bottom grid">
+        <p class="intro-detail" id="intro-detail"></p>
+        <ul class="intro-qualities" id="intro-qualities" role="list" aria-label="Qualities"></ul>
+      </div>
+    </section>
+
+    <!-- ============ SELECTED WORK ============ -->
+    <section class="work wrap" id="work" aria-labelledby="work-title" data-view="wheel">
+      <div class="section-head">
+        <span class="mono">(01)</span>
+        <h2 id="work-title">Selected work</h2>
+        <div class="head-aside view-toggle" role="group" aria-label="Choose how to view projects">
+          <button type="button" data-view-btn="wheel" aria-pressed="true">Wheel</button>
+          <button type="button" data-view-btn="grid" aria-pressed="false">Grid</button>
+        </div>
+      </div>
+      <!-- The record wheel and the grid are both built by main.js from content.js -->
+      <div class="wheel" id="wheel" role="region" aria-roledescription="record wheel" aria-label="Projects"></div>
+      <ul class="work-grid" id="work-grid" role="list"></ul>
+      <noscript><p>This site needs JavaScript switched on to show projects.</p></noscript>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about wrap" id="about" aria-labelledby="about-title">
+      <div class="section-head">
+        <span class="mono">(02)</span>
+        <h2 id="about-title">About</h2>
+      </div>
+      <div class="grid">
+        <div class="about-photo" id="about-photo"></div>
+        <div class="about-text">
+          <div class="lead" id="about-lead"></div>
+          <dl class="facts" id="about-facts"></dl>
+          <p id="about-cv"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ JOURNAL ============ -->
+    <section class="journal wrap" id="journal" aria-labelledby="journal-title">
+      <div class="section-head">
+        <span class="mono">(03)</span>
+        <h2 id="journal-title">Journal</h2>
+      </div>
+      <ul class="journal-list" id="journal-list" role="list"></ul>
+    </section>
+
+    <!-- ============ CLOSING THOUGHT ============ -->
+    <section class="closing wrap" id="closing" aria-labelledby="closing-statement">
+      <p class="mono muted" id="closing-label"></p>
+      <h2 class="closing-statement" id="closing-statement"></h2>
+      <p class="closing-detail" id="closing-detail"></p>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact wrap" id="contact" aria-labelledby="contact-title">
+      <div class="section-head">
+        <span class="mono">(04)</span>
+        <h2 id="contact-title">Contact</h2>
+      </div>
+      <p class="mono muted">Say hello —</p>
+      <a class="contact-email" id="contact-email" href="#"></a>
+      <div class="contact-row">
+        <button type="button" class="copy-btn" id="copy-email">Copy email</button>
+        <span class="visually-hidden" id="copy-status" aria-live="polite"></span>
+        <ul class="contact-links" id="contact-links" role="list"></ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <span class="mono">© <span data-year></span> Finn Tozer</span>
+      <a class="mono" href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
